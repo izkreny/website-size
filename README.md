@@ -4,10 +4,12 @@ Because I want to estimate size of the website before I download it entirely wit
 
 ## What?
 
-This bash shell wrapper script will take **URL of the website as input** and use *Wget Web spider super powers* to recursively crawl website and log all info into the log file from which size will be estimated with a little help from our friends, i.e., grep, sed and awk.
+This bash shell wrapper script will take **URL of the website as input** and use Wget *Web spider super powers* to recursively crawl website and save all info into the log file from which size will be estimated with a little help from our friends, i.e., grep, sed and awk.
 
 ## How?
 
 Usage: `website-size URL`
 
-Depending on the size of the website crawling site can take some time to finish. Patience is a virtue. Festina lente. :)
+Depending on the size of the website crawling process can take some time to finish. Patience is a virtue.
+
+Festina lente. ;)

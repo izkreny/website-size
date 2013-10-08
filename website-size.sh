@@ -6,7 +6,7 @@
 log=/tmp/wget-website-size-log.txt
 
 # Do the spider work
-echo "### Calculating size of $1 ###"
+echo "### Calculating size of ${!#} ###"
 sleep 2s
 echo "### This will take some time to finish, please wait. ###"
 wget --recursive --level=inf --spider --server-response --output-file="$log" "$@"

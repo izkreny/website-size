@@ -6,15 +6,15 @@
 log=/tmp/wget-website-size-log.txt
 
 # Do the spider work
-echo "### Checking size of $1 website... ###"
+echo "### Calculating size of $1 ###"
 sleep 2s
 echo "### This will take some time to finish, please wait. ###"
-wget --recursive --level=inf --spider --server-response --output-file="$log" "$1"
+wget --recursive --level=inf --spider --server-response --output-file="$log" "$@"
 echo "Finished!"
 sleep 1s
 
 # Calculate and print website size
-echo "Estimated size of the website: $(\
+echo "Estimated size: $(\
   grep -e "Content-Length" "$log" | \
   sed -e 's/  Content-Length: //g' | \
   awk '{sum+=$1} END {printf("%.0f", sum / 1024 / 1024)}'\

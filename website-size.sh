@@ -2,14 +2,14 @@
 # Requirements: wget, grep, sed, awk
 # Usage: website-size URL
 
-# wget log file
+# Prepare wget log file
 log=/tmp/wget-website-size-log.txt
 
 # Do the spider work
 echo "### Checking size of $1 website... ###"
 sleep 2s
 echo "### This will take some time to finish, please wait. ###"
-wget --recursive --spider --server-response --output-file="$log" "$1"
+wget --recursive --level=inf --spider --server-response --output-file="$log" "$1"
 echo "Finished!"
 sleep 1s
 

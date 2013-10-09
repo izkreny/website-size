@@ -6,7 +6,7 @@
 log=/tmp/wget-website-size-log.txt
 
 # Do the spider magic
-echo "### Calculating size of ${!#} ###"
+echo "### Crawling ${!#} website... ###"
 sleep 2s
 echo "### This will take some time to finish, please wait. ###"
 
@@ -21,7 +21,7 @@ sleep 1s
 
 # Check if prepared logfile is used
 if [ -f "$log" ]; then
-    # Calculate and print website size
+    # Calculate and print estimated website size
     echo "Estimated size: $(\
         grep -e "Content-Length" "$log" | \
         sed -e 's/  Content-Length: //g' | \
@@ -32,8 +32,6 @@ if [ -f "$log" ]; then
     rm "$log"
 else
     echo "Unable to calculate estimated size."
-    sleep 1s
-    echo "Please do it manually with analyze-wget-log script."
 fi
 
 exit

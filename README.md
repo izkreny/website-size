@@ -14,23 +14,18 @@ Because I want to estimate size of the website before I download it entirely wit
 
 #### WEBSITE-SIZE
 
-    $ `website-size [OPTIONS] URL`
+    $ website-size [OPTIONS] URL
 
 `website-size.sh` is using following Wget options:
 - `--recursive` or `-r` - Turn on recursive retrieving.
 - `--level=inf` or `-l 0` - Specify recursion maximum depth level, i.e., sets infinite recursion depth. You can override this option while invoking script, e.g.:
-
         $ website-size -l 1 http://example.com/image-gallery.html
-
 This is useful if you want to estimate size of all elements (e.g., images) presented solely in image-gallery.html webpage.
-
 - `--spider` - Convert Wget to Web spider, i.e., do not download the pages, just check that they are there.
 - `--server-response` or `-S` - Print the headers sent by HTTP server.
 - `--no-directories` or `-nd` - Don't create a hierarchy of directories when retrieving recursively. Wget will otherwise create an empty hierarchy of directories that we really do not need for our use case.
-- `--output-file=logfile` or `-o logfile` - Log all messages to *logfile*. In our case *logfile* is equal to `/tmp/wget-website-size-log` which allow script to calculate estimated size of the website. You can override this option while invoking script, e.g.:
-
+- `--output-file=logfile` or `-o logfile` - Log all messages to *logfile*. In our case *logfile* is equal to `/tmp/wget-website-size-log` which allows to calculate estimated size of the website. You can override this option while invoking script, e.g.:
         $ website-size -o log http://example.com
-
 In that case Wget will log all messages into `log` file and `website-size.sh` script will at the end print out **Unable to calculate estimated size.** message. In this case you can use `analyze-wget-log.sh` script to estimate size of the website or specific type of files.
 
 Other useful Wget options that you can use while invoking script:
@@ -58,13 +53,10 @@ Usage is pretty straightforward, get yourself some Wget logfile and start messin
 
 Example commands listed below are based on Ubuntu 12.04 LTS.
 
-0. Install requirements
-1. Download and uncompress website-size, e.g.:
-
+1. Install requirements
+2. Download and uncompress website-size, e.g.:
         $ sudo wget -q https://github.com/mariomaric/website-size/archive/master.tar.gz -O - | tar -C /opt -xz
-
-2. Create a symbolic link to the `website-size.sh` and `analyze-wget-log.sh` in a directory that is already in your PATH, e.g.:
-
+3. Create a symbolic link to the `website-size.sh` and `analyze-wget-log.sh` in a directory that is already in your PATH, e.g.:
         $ sudo ln -s /opt/website-size-master/website-size.sh /usr/local/bin/website-size
         $ sudo ln -s /opt/website-size-master/analyze-wget-log.sh /usr/local/bin/analyze-wget-log
 

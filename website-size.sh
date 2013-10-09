@@ -1,6 +1,5 @@
 #!/bin/bash
-# Requirements: wget, grep, sed, awk
-# Usage: website-size URL
+# Info: http://mariomaric.net/website-size/
 
 # Prepare wget logfile
 log=/tmp/wget-website-size-log.txt
@@ -24,8 +23,7 @@ if [ -f "$log" ]; then
     # Calculate and print estimated website size
     echo "Estimated size: $(\
         grep -e "Content-Length" "$log" | \
-        sed -e 's/  Content-Length: //g' | \
-        awk '{sum+=$1} END {printf("%.0f", sum / 1024 / 1024)}'\
+        awk '{sum+=$2} END {printf("%.0f", sum / 1024 / 1024)}'\
     ) Mb"
 
     # Delete wget log file

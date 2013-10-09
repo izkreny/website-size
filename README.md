@@ -68,7 +68,7 @@ Example commands listed below are based on Ubuntu 12.04 LTS.
 
 If you don't fancy GNU/Linux command-line too much you could try [HTTrack] [5] - a free and easy-to-use offline browser utility that comes with a GUI.
 
-[1]: http://mariomaric.net/download-website/
+[1]: https://github.com/mariomaric/download-website#readme
     "Download website - Wget wrapper script"
 [2]: http://en.wikipedia.org/wiki/Internet_media_type
     "Internet media type @ Wikipedia"

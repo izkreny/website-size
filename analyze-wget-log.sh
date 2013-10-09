@@ -1,5 +1,5 @@
 #!/bin/bash
-# Info: http://mariomaric.net/website-size/
+# Info: https://github.com/mariomaric/website-size#readme
 
 # Check if second argument is provided
 if [ -z "$2" ]

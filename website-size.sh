@@ -2,7 +2,7 @@
 # Info: http://mariomaric.net/website-size/
 
 # Prepare wget logfile
-log=/tmp/wget-website-size-log.txt
+log=/tmp/wget-website-size-log
 
 # Do the spider magic
 echo "### Crawling ${!#} website... ###"

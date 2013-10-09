@@ -20,7 +20,7 @@ echo "Finished with crawling!"
 sleep 1s
 
 # Check if prepared logfile is used
-if [ -f "$log"]; then
+if [ -f "$log" ]; then
     # Calculate and print website size
     echo "Estimated size: $(\
         grep -e "Content-Length" "$log" | \

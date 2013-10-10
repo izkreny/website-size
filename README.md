@@ -12,7 +12,7 @@ Because I want to estimate size of the website before I download it entirely wit
 
 ### USAGE
 
-#### WEBSITE-SIZE
+#### website-size
 
     $ website-size [OPTIONS] URL
 
@@ -36,7 +36,7 @@ Because I want to estimate size of the website before I download it entirely wit
 
         $ website-size -o log http://example.com
 
-    In that case Wget will log all messages into `log` file and `website-size.sh` script will at the end print out "**Unable to calculate estimated size.**" message. In this case you can use `estimate-size.sh` script to estimate size of the website or specific type of files.
+    In the example above Wget will log all messages into the `log` file and therefore `website-size.sh` script will at the end print out "**Unable to calculate estimated size.**" message. In this case you can use `estimate-size.sh` script to estimate size of the website or specific type of files.
 
 Other useful Wget options that you can use while invoking script:
 - `--no-check-certificate` — Don't check the server certificate against the available certificate authorities. Also don't require the URL host name to match the common name presented by the certificate. Use this if you have issues with HTTPS URLs. 
@@ -49,7 +49,7 @@ Depending on the size of the website crawling process can take some time to fini
 
 Festina lente. ;)
 
-#### ESTIMATE-SIZE
+#### estimate-size
 
     $ estimate-size logfile [TYPE]
 

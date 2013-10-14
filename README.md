@@ -42,6 +42,7 @@ Other useful Wget options that you can use while invoking script:
 - `--no-check-certificate` — Don't check the server certificate against the available certificate authorities. Also don't require the URL host name to match the common name presented by the certificate. Use this if you have issues with HTTPS URLs. 
 - `--no-parent`, `-np` — Do not ever ascend to the parent directory when retrieving recursively. This is a useful option, since it guarantees that only the files *below* a certain hierarchy will be downloaded.
 - `--wait=seconds`, `-w seconds` — Wait the specified number of *seconds* between the retrievals. Use of this option is recommended, as it lightens the server load by making the requests less frequent. 
+- `--user-agenti=agent-string`, `-U agent-string` — Identify as *agent-string* (i.e. `User-Agent` header field) to the HTTP server.
 
 For more information about Wget options see [GNU Wget manual] [3].
 

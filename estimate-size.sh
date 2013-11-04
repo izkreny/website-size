@@ -17,4 +17,4 @@ else
     ) Mb"
 fi
 
-exit
+exit 0

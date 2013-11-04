@@ -16,6 +16,8 @@ Because I want to estimate size of the website before I download it entirely wit
 
     $ website-size [OPTIONS] URL
 
+##### DEFAULT OPTIONS AND HOW TO OVERRIDE SOME OF THEM
+
 `website-size.sh` is using following Wget options:
 
 - `--recursive`, `-r` — Turn on recursive retrieving.
@@ -37,6 +39,8 @@ Because I want to estimate size of the website before I download it entirely wit
         $ website-size -o log http://example.com
 
     In the example above Wget will log all messages into the `log` file and therefore `website-size.sh` script will at the end print out "**Unable to calculate estimated size.**" message. In this case you can use `estimate-size.sh` script to estimate size of the website or specific type of files.
+
+##### EXTRA OPTIONS AND EVEN MORE
 
 Other useful Wget options that you can use while invoking script:
 - `--no-check-certificate` — Don't check the server certificate against the available certificate authorities. Also don't require the URL host name to match the common name presented by the certificate. Use this if you have issues with HTTPS URLs. 

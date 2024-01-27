@@ -1,5 +1,5 @@
 #!/bin/bash
-# Info: https://github.com/mariomaric/website-size#readme
+# Info: https://github.com/izkreny/website-size#readme
 
 # Prepare wget logfile
 log="/tmp/wget-website-size-log"

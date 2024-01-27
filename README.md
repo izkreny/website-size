@@ -78,11 +78,11 @@ Example commands listed below are based on Ubuntu 12.04 LTS.
         $ sudo ln -s /opt/website-size-master/website-size.sh /usr/local/bin/website-size
         $ sudo ln -s /opt/website-size-master/estimate-size.sh /usr/local/bin/estimate-size
 
-[1]: https://github.com/mariomaric/download-website#readme
+[1]: https://github.com/izkreny/download-website#readme
     "Download website - Wget wrapper script"
 [2]: http://en.wikipedia.org/wiki/Internet_media_type
     "Internet media type @ Wikipedia"
 [3]: http://www.gnu.org/software/wget/manual/wget.html
     "GNU Wget Manual"
-[4]: http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types
+[4]: https://en.wikipedia.org/wiki/Media_type#Common_examples
     "List of common media types @ Wikipedia"
